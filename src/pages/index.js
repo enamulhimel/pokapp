@@ -1,18 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/Head';
+import Layout from 'components/Layout';
 
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <h1>
-          wellcome to <a href='http://nextjs.org'>Next.js</a>
-        </h1>
-      </main>
-    </div>
-  )
+    <Layout title="NextJS pokedex">
+      <h1>NextJS pokapp</h1>
+    </Layout>
+  );
 }
