@@ -11,6 +11,12 @@ export default function Home() {
 }
 
 export async function getStaticProps(context){
+  try{
+    const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=150');
+    const {results} = await res.json();
+  }catch(err){
+    console.error(err);
+  }
   return{
     props:{}
   }
